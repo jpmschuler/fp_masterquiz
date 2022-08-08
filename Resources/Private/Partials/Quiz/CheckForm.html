@@ -4,35 +4,35 @@ function checkQuizForm() {
 	$('#quiz-form'+tempceuid+' .quiz-question-buttons').each(function() {
 		var noneSelected = true;
 		var selectedCounter = 0;
-		// radio-buttons
+		/* radio-buttons */
 		$(this).find('.quiz-radio').each(function() {
 			selectedCounter++;
 			if ($(this).hasClass('quiz-answer-selected') || $(this).hasClass('quiz-answer-optional')) {
 				noneSelected = false;
 			}
 		});
-		// Checkboxen
+		/* Checkboxen */
 		$(this).find('.quiz-checkbox').each(function() {
 			selectedCounter++;
 			if ($(this).hasClass('quiz-answer-selected') || $(this).hasClass('quiz-answer-optional')) {
 				noneSelected = false;
 			}
 		});
-		// Select-boxen
+		/* Select-boxen */
 		$(this).find('.quiz-select').each(function() {
 			selectedCounter++;
 			if ($(this).hasClass('quiz-answer-selected') || $(this).hasClass('quiz-answer-optional')) {
 				noneSelected = false;
 			}
 		});
-		// input-fields
+		/* input-fields */
 		$(this).find('.quiz-input').each(function() {
 			selectedCounter++;
 			if ($(this).hasClass('quiz-answer-selected') || $(this).hasClass('quiz-answer-optional')) {
 				noneSelected = false;
 			}
 		});
-		// textarea
+		/* textarea */
 		$(this).find('.quiz-textarea').each(function() {
 			selectedCounter++;
 			if ($(this).hasClass('quiz-answer-selected') || $(this).hasClass('quiz-answer-optional')) {
