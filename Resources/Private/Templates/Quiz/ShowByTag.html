@@ -212,7 +212,7 @@
                                 }
 
                                 $("#quiz-GoOn").click(function () {
-                                    // check if there are selected answers to all questions. if not, show an warning
+                                    /* check if there are selected answers to all questions. if not, show an warning */
                                     var allSelected = checkQuizForm();
                                     if (noFormCheck || allSelected) {
                                         $('#quiz-form' + ceuid).submit();
